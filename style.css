@@ -39,12 +39,16 @@
   .section--dark{ background: radial-gradient(1200px 700px at 30% 0%, #1c232a, var(--dark)); color:#fff; }
   
   /* Tighten space after Services / Support section */
-   #services.section{
+  #services.section{
     padding-bottom: 64px; /* try 48–72px */
   }
 
   #contact.section {
     padding-top: 64px;
+  }
+
+  #about .lead {
+    margin-bottom: 30px;
   }
 
   .kicker{
@@ -65,6 +69,14 @@
   }
 
   .kicker--light{ color: rgba(255,255,255,0.70); }
+
+  .section--tint .kicker {
+    color: #8a6f3d; /* warm gold / luxury accent */
+  }
+
+  .section:not(.section--dark) .kicker {
+    color: #b08d57; /* luxury gold */
+  }
   
   h1,h2,h3{
     font-family: "Playfair Display", Georgia, serif;

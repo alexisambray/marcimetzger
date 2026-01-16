@@ -425,6 +425,15 @@
     overflow:hidden;
     padding: 110px 0;
   }
+
+  .search .panel {
+    background: rgba(255, 255, 255, 0.92); /* try 0.90 - 0.95 */
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  
+    border: 1px solid rgba(255, 255, 255, 0.35);
+  }
+
   .search__bg{ position:absolute; inset:0; }
   .search__bg img{ width:100%; height:100%; object-fit: cover; }
   .search__overlay{
@@ -443,6 +452,14 @@
   }
   .panel__head{ margin-bottom: 14px; }
   .panel__head h2{ margin-bottom: 6px; }
+
+  .section.search .panel {
+    background: rgba(255, 255, 255, 0.92) !important;
+    backdrop-filter: blur(6px) !important;
+    -webkit-backdrop-filter: blur(6px) !important;
+    border: 1px solid rgba(255,255,255,0.35) !important;
+  }
+
   
   .form{ display:grid; gap: 14px; }
   .form__row{
@@ -454,6 +471,21 @@
     grid-template-columns: repeat(4, minmax(0,1fr)) 1.1fr;
     align-items:end;
   }
+
+/* Office hours – use sans-serif for clarity */
+  .hours,
+  .hours h4,
+  .hours__row,
+  .hours__row span {
+   font-family: var(--font-sans, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif);
+ }
+
+ .hours {
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+  }
+
   label span{
     display:block;
     font-size: 12px;

@@ -209,10 +209,10 @@
     align-items: center;
     overflow: hidden; /* prevents bg bleeding */
   }
-
+  
   .hero__eyebrow {
-    letter-spacing: 0.18em;
-    opacity: 0.75;
+    margin-bottom: 18px;
+    letter-spacing: 0.12em;
   }
 
   .hero__actions{

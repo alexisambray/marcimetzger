@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Marci Metzger Homes | Pahrump Realtor</title>
 
@@ -15,27 +15,39 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Top bar -->
-  <header class="header" id="top">
-    <div class="container header__inner">
-      <a class="brand" href="#top" aria-label="Marci Metzger Homes">
-        <span class="brand__name">MARCI METZGER</span>
-        <span class="brand__script">Homes</span>
-      </a>
+    <!-- Top bar -->
+    <header class="header" id="top">
+      <div class="container header__inner">
+        <a class="brand" href="#top" aria-label="Marci Metzger Homes">
+          <span class="brand__name">MARCI METZGER</span>
+          <span class="brand__script">Homes</span>
+        </a>
 
-      <nav class="nav" aria-label="Primary navigation">
-        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
-        <div class="nav__links" id="navLinks">
-          <a href="#about">About</a>
-          <a href="#sell">Sellers</a>
-          <a href="#gallery">Properties</a>
-          <a class="btn btn--sm" href="tel:2069196886">Inquire</a>
-        </div>
-      </nav>
-    </div>
-  </header>
+        <nav class="nav" aria-label="Primary navigation">
+          <!-- Hamburger (mobile only via CSS) -->
+          <button
+            class="nav__toggle"
+            id="navToggle"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <!-- Navigation links -->
+          <div class="nav__links" id="navLinks">
+            <a href="#about">About</a>
+            <a href="#sell">Sellers</a>
+            <a href="#gallery">Properties</a>
+
+            <!-- Keep Inquire INSIDE the menu so it appears in mobile dropdown -->
+            <a class="btn btn--sm nav__cta" href="tel:2069196886">Inquire</a>
+          </div>
+        </nav>
+      </div>
+    </header>
 
 <!-- Hero -->
 <section class="hero" aria-label="Hero">
@@ -51,12 +63,12 @@
         <h1>PAHRUMP REALTOR</h1>
   
         <p class="hero__sub">
-          Your local guide to buying and selling in Pahrump — with nearly 3 decades of experience.
+          Your local guide to buying and selling in Pahrump - with nearly 3 decades of experience.
         </p>
   
         <div class="hero__cta">
             <div class="hero__trust">
-              <span>★ 3 decades experience</span>
+              <span>3 decades experience</span>
               <span>•</span>
               <span>90 clients helped (2021)</span>
               <span>•</span>

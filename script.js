@@ -3,13 +3,12 @@ const navToggle = document.getElementById("navToggle");
 const navLinks = document.getElementById("navLinks");
 
 navToggle?.addEventListener("click", () => {
-  if (!navLinks) return;
   const open = navLinks.classList.toggle("is-open");
   navToggle.setAttribute("aria-expanded", open ? "true" : "false");
 });
 
 // Close menu on link click (mobile)
-navLinks?.querySelectorAll("a").forEach((a) => {
+navLinks?.querySelectorAll("a").forEach(a => {
   a.addEventListener("click", () => navLinks.classList.remove("is-open"));
 });
 

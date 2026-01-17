@@ -539,7 +539,7 @@
   }
   
   /* Gallery - horizontal scroll */
-.gallery-strip{
+  .gallery-strip{
     display: flex;
     gap: 14px;
     overflow-x: auto;
@@ -683,7 +683,7 @@
   }
 
   /* Contact */
-.contact-grid{
+ .contact-grid{
     display:flex;
     grid-template-columns: 1.1fr .9fr;
     gap: 24px;
@@ -691,7 +691,7 @@
   }
 
   /* Each card becomes equal-height */
-.contact-grid > .card-block{
+ .contact-grid > .card-block{
     flex: 1;
     height: 100%;               /* helps in some browsers */
     display: flex;
@@ -699,13 +699,13 @@
   }
 
   /* Optional: make the right card content breathe + keep buttons at bottom */
-.contact-meta{
+ .contact-meta{
     display: flex;
     flex-direction: column;
     flex: 1;                    /* fill remaining space inside the aside card */
   }
   
-.contact-meta .actions{
+ .contact-meta .actions{
     margin-top: auto;           /* pushes buttons to the bottom */
   }
   
@@ -844,12 +844,40 @@
   }
   
   /* Footer socials */
-  .socials{
-    display:flex;
-    gap: 10px;
-    margin: 16px 0;
+  .socials {
+    display: flex;
+    gap: 16px;
+    margin: 20px 0;
   }
-  .socials a{
+
+  .social {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.25);
+  display: grid;
+  place-items: center;
+  transition: all 0.25s ease;
+  }
+
+  .social svg {
+  width: 20px;
+  height: 20px;
+  fill: #fff;
+  opacity: 0.9;
+  }
+
+  
+ .social:hover {
+  border-color: #c9a46b; /* gold accent */
+  background: rgba(201,164,107,0.12);
+  }
+
+ .social:hover svg {
+  fill: #c9a46b;
+  }
+
+ .socials a {
     width: 36px;
     height: 36px;
     display:grid;
@@ -859,7 +887,8 @@
     background: rgba(255,255,255,0.06);
     color:#fff;
   }
-  .socials a:hover{ background: rgba(255,255,255,0.12); }
+
+ .socials a:hover{ background: rgba(255,255,255,0.12); }
   
   .footer-links{
     display:grid;
